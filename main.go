@@ -1,11 +1,9 @@
 package main
 
 import (
-	_ "fmt"
-	_ "log"
-	_ "net/http"
+	"net/http"
 )
 
 func main() {
-
+	fileServer := http.fileServer(http.Dir("./static"))
 }
